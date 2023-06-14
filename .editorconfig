@@ -1,0 +1,7 @@
+# EditorConfig
+root = true
+
+[*]
+indent_style = tab
+quote_type = single
+ij_javascript_use_double_quotes = false

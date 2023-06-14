@@ -1,0 +1,13 @@
+# IDE
+.idea
+.idea/*
+.vscode
+.vscode/*
+
+node_modules
+.DS_Store
+src/dist
+dist-ssr
+*.local
+
+package-lock.json
