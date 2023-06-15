@@ -10,4 +10,9 @@ export default [
 		name: 'edit-user',
 		component: () => import('./EditUser.vue')
 	},
+	{
+		path: `/user/find`,
+		name: 'search-user',
+		component: () => import('./SearchUser.vue')
+	},
 ];

@@ -6,7 +6,9 @@ import {
 	faMusic,
 	faStar,
 	faHistory,
-	faSave
+	faSave,
+	faTrash,
+	faSearch
 } from "@fortawesome/free-solid-svg-icons";
 
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
@@ -19,7 +21,9 @@ library.add(
 	faMusic,
 	faStar,
 	faHistory,
-	faSave
+	faSave,
+	faTrash,
+	faSearch
 );
 
 export default function (app) {

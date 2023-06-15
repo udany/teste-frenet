@@ -2,7 +2,7 @@
 export default [
 	{
 		path: `/`,
-		name: 'index',
+		name: 'home',
 		component: () => import('./Home.vue')
 	},
 ];

@@ -1,6 +1,15 @@
 <template>
 	<div class="home">
-		Hi
+		<h1>Página inicial</h1>
+
+		<ul>
+			<li>
+				<router-link :to="{ name: 'new-user' }">Novo usuário</router-link>
+			</li>
+			<li>
+				<router-link :to="{ name: 'search-user' }">Buscar usuário</router-link>
+			</li>
+		</ul>
 	</div>
 </template>
 

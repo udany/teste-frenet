@@ -29,7 +29,7 @@ export const apiService = {
 		},
 		async delete(user: User): Promise<boolean> {
 			try {
-				let { data } = await frenetApi.put(`/user/${user.username}`, user);
+				let { data } = await frenetApi.delete(`/user/${user.username}`);
 
 				return true;
 			} catch (e) {
@@ -53,8 +53,6 @@ export const apiService = {
 			try {
 				let { data } = await frenetApi.post('/quote', quote);
 
-
-				debugger;
 				return data?.quotations ? data?.quotations.map(x => new QuotationResponse().$fill(x)) : [];
 			} catch (e) {
 				// TODO: Edge cases
