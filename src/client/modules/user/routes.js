@@ -5,4 +5,9 @@ export default [
 		name: 'new-user',
 		component: () => import('./NewUser.vue')
 	},
+	{
+		path: `/user/:username`,
+		name: 'edit-user',
+		component: () => import('./EditUser.vue')
+	},
 ];
