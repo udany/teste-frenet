@@ -39,11 +39,4 @@
 		margin-right: 20px;
 		margin-bottom: 120px;
 	}
-
-	.KButton {
-		position: fixed;
-		bottom: 80px;
-		left: 50%;
-		transform: translateX(-50%);
-	}
 </style>

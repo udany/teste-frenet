@@ -43,3 +43,7 @@ img { max-width: 100%; }
 .scroll-discreet {
 	--scroll-bar-size: 2px;
 }
+
+::selection {
+	background-color: $primary;
+}

@@ -17,7 +17,13 @@ h1, h2, h3, h4, h5, h6 {
 	color: #fff;
 	font-family: $font-title;
 	font-weight: 400;
-	text-shadow: 0 0 15px rgba(50, 50, 50, 1);
+	text-shadow: 0 0 5px hsla(var(--neutral-darkest-hsl), 1);
+	margin: .5em 0;
+
+	&:first-child {
+		margin-top: 0;
+		margin-top: 0;
+	}
 
 	.rb-icon {
 		transform: scale(.8);
