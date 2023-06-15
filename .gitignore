@@ -6,8 +6,7 @@
 
 node_modules
 .DS_Store
-src/dist
-dist-ssr
+dist
 *.local
 
 package-lock.json
