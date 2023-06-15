@@ -1,6 +1,7 @@
 <template>
 	<div class="main">
 		<h1>
+			<router-link :to="{ name: 'home' }"><fa-icon>chevron-left</fa-icon></router-link>
 			Editar usuário
 		</h1>
 

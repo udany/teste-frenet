@@ -8,7 +8,8 @@ import {
 	faHistory,
 	faSave,
 	faTrash,
-	faSearch
+	faSearch,
+	faChevronLeft
 } from "@fortawesome/free-solid-svg-icons";
 
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
@@ -23,7 +24,8 @@ library.add(
 	faHistory,
 	faSave,
 	faTrash,
-	faSearch
+	faSearch,
+	faChevronLeft
 );
 
 export default function (app) {
