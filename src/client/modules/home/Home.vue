@@ -2,12 +2,21 @@
 	<div class="home">
 		<h1>Página inicial</h1>
 
+		<h3>Usuários</h3>
 		<ul>
 			<li>
 				<router-link :to="{ name: 'new-user' }">Novo usuário</router-link>
 			</li>
 			<li>
 				<router-link :to="{ name: 'search-user' }">Buscar usuário</router-link>
+			</li>
+		</ul>
+
+		<h3>Orçamento</h3>
+
+		<ul>
+			<li>
+				<router-link :to="{ name: 'quote' }">Fazer orçamento</router-link>
 			</li>
 		</ul>
 	</div>
@@ -20,25 +29,7 @@
 
 	export default {
 		name: 'Home',
-		components: {},
-		setup() {
-			let data = reactive({
-				quote: new Quote().$fill({
-					zipCodeSource: '20710180',
-					zipCodeDestination: '59600145',
-					weight: 10,
-					dimension: {
-						width: 10,
-						heigth: 5,
-						length: 10,
-					},
-				}),
-			})
-
-			onMounted(async () => {
-				let res = await apiService.quote.get(data.quote);
-			})
-		},
+		components: {}
 	};
 </script>
 

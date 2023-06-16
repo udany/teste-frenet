@@ -6,7 +6,7 @@
 		</h1>
 
 		<!-- username -->
-		<div class="field">
+		<div class="form-field">
 			<label for="username">Nome de Usuário</label>
 			<input id="username" v-model="data.username" @keydown.enter="search" autofocus />
 			<AutoResizer>
@@ -25,12 +25,11 @@
 <script>
 	import { reactive } from 'vue';
 	import { useRouter } from 'vue-router'
-	import UserForm from './components/UserForm.vue';
 	import BaseButton from '../../components/BaseButton.vue';
 
 	export default {
 		name: 'NewUser',
-		components: { BaseButton, UserForm },
+		components: { BaseButton },
 		setup() {
 			const router = useRouter();
 

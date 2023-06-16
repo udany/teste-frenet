@@ -72,6 +72,11 @@
 	--error-hs: #{hs-values($error)};
 	--error-hsl: #{hsl-values($error)};
 
+	--success: #{$success};
+	--success-h: #{hue($success)};
+	--success-hs: #{hs-values($success)};
+	--success-hsl: #{hsl-values($success)};
+
 
 	// Spacers
 	--spacer: #{$spacer};

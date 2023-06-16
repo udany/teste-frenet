@@ -26,6 +26,10 @@
 
 			border-bottom-color: var(--info);
 		}
+
+		+ input {
+			margin-inline-start: 1em;
+		}
 	}
 
 	.field-message {
