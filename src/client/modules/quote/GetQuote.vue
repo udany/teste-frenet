@@ -1,7 +1,9 @@
 <template>
 	<div class="main">
 		<h1>
-			<router-link :to="{ name: 'home' }"><fa-icon>chevron-left</fa-icon></router-link>
+			<router-link :to="{ name: 'home' }">
+				<fa-icon>chevron-left</fa-icon>
+			</router-link>
 			Fazer orçamento
 		</h1>
 
@@ -16,7 +18,8 @@
 					</p>
 				</transition>
 				<transition name="fade">
-					<p class="field-message error" v-if="data.quote.zipCodeSource && !data.quote.zipCodeSource.match(zipRegex)">
+					<p class="field-message error"
+					   v-if="data.quote.zipCodeSource && !data.quote.zipCodeSource.match(zipRegex)">
 						* CEP Inválid
 					</p>
 				</transition>
@@ -34,7 +37,8 @@
 					</p>
 				</transition>
 				<transition name="fade">
-					<p class="field-message error" v-if="data.quote.zipCodeDestination && !data.quote.zipCodeDestination.match(zipRegex)">
+					<p class="field-message error"
+					   v-if="data.quote.zipCodeDestination && !data.quote.zipCodeDestination.match(zipRegex)">
 						* CEP Inválid
 					</p>
 				</transition>
@@ -62,7 +66,8 @@
 			<input type="number" min="0" v-model="data.quote.dimension.length" style="width: 50px" />
 			<AutoResizer>
 				<transition name="fade">
-					<p class="field-message" v-if="!data.quote.dimension.heigth || !data.quote.dimension.width || !data.quote.dimension.length">
+					<p class="field-message"
+					   v-if="!data.quote.dimension.heigth || !data.quote.dimension.width || !data.quote.dimension.length">
 						* Obrigatório
 					</p>
 				</transition>
@@ -105,14 +110,7 @@
 
 			let data = reactive({
 				quote: new Quote().$fill({
-					zipCodeSource: '20710180',
-					zipCodeDestination: '59600145',
-					weight: 10,
-					dimension: {
-						width: 10,
-						heigth: 5,
-						length: 10,
-					},
+					dimension: {},
 				}),
 				results: [] as QuotationResponse[]
 			});
@@ -142,6 +140,7 @@
 
 	.results {
 		margin-top: 1em;
+
 		> * + * {
 			margin-top: 15px;
 		}
